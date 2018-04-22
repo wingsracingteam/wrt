@@ -42,6 +42,7 @@ nav ul li a{
 }
 
 nav ul li:hover{
+	text-decoration: none;
 	background: #E7842A;
 }
 
@@ -72,6 +73,7 @@ nav ul li:hover{
 	text-transform: uppercase;
 	cursor: pointer;
 }
+
 @media (max-width : 900px ){
 	nav{
 		display: none;
