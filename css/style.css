@@ -73,6 +73,11 @@ nav ul li:hover{
 	text-transform: uppercase;
 	cursor: pointer;
 }
+.img {
+	width: 80%;
+	height: auto;
+	margin-left: 10%;
+}
 
 @media (max-width : 900px ){
 	nav{
@@ -95,6 +100,11 @@ nav ul li:hover{
 	.brand{
 		display: none;
 	}
+	.img {
+	width: 100%;
+	height: auto;
+	margin-left: 0px;
+}
 	
 	
 	/* carousel */
