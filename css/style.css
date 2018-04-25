@@ -45,7 +45,6 @@ nav ul li:hover{
 	text-decoration: none;
 	background: #E7842A;
 }
-
 .responsive-bar{
 	width: 100%;
 	background: #302E2E;
@@ -73,12 +72,6 @@ nav ul li:hover{
 	text-transform: uppercase;
 	cursor: pointer;
 }
-.img {
-	width: 80%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 @media (max-width : 900px ){
 	nav{
@@ -101,11 +94,6 @@ nav ul li:hover{
 	.brand{
 		display: none;
 	}
-	.img {
-	width: 100%;
-	height: auto;
-	margin-left: 0px;
-}
 	
 	
 	/* carousel */
@@ -131,8 +119,14 @@ nav ul li:hover{
 h4{
 	font-style: italic;		
 }
-
-
+#karoseria{
+	font-size: 1.6em;
+}
+#karoseria h4{ 
+	padding-bottom: 15%;
+	text-align: center;
+	font-size: 2em;
+}
 
 
 .carousel-caption{
@@ -154,7 +148,6 @@ h4{
 	height: 167px;
 	margin: 7% auto;
 }
-
 .container{
 	margin: 2% auto;
 	
