@@ -44,6 +44,11 @@ nav ul li:hover{
 	text-decoration: none;
 	background: #E7842A;
 }
+#menu {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
 .responsive-bar{
 	width: 100%;
 	background: #302E2E;
