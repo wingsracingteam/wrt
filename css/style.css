@@ -9,6 +9,10 @@ body{
 	overflow: auto;
 	max-width: 100%;
 }
+article{
+	overflow: auto;
+	padding: 0 5%;
+}
 footer{
 	width: 100%;
 	background-color: #302E2E;
@@ -16,11 +20,10 @@ footer{
 	color: #eef0ed;
 }
 nav{
+	z-index: 1;
 	position: fixed;
 	width: 100%;
 	background: #373535;
-	padding:0 50px;
-	box-sizing: border-box;
 }
 nav ul{
 	margin: 0;
@@ -60,9 +63,6 @@ nav ul li:hover{
 	transform: scale(1.15);
 }
 .social a{
-	padding: 1em;
-	border:solid 2px;
-	border-radius: 10%;
 	text-decoration: none;
 	text-align: center;
 	color:#3b5998;
@@ -73,8 +73,9 @@ nav ul li:hover{
 }
 #about{
 	display: flex;
+	padding-bottom: 5%;
 }
-#about h4{
+article h4{
 	padding-top: 5%;
 	font-size: 1.3em;
 	text-align: center;
@@ -83,7 +84,7 @@ nav ul li:hover{
 	flex-grow:1;
 }
 #about img{
-	padding-top: 5%
+	padding-top: 7%;
 	flex-grow:1;
 	max-width: 455px;
 	height: 455px;
@@ -95,9 +96,25 @@ nav ul li:hover{
 	flex-grow:1;
 }
 #sutaz img{
-	width: 100%;
-	max-width: 250px;
+
+	width:200%;
 	flex-grow:1;
+}
+
+
+
+
+
+
+
+
+#karoseria{
+	font-size: 1.6em;
+}
+#karoseria h4{ 
+	padding-bottom: 15%;
+	text-align: center;
+	font-size: 2em;
 }
 @media (max-width : 900px ){
 	.pc {
@@ -114,14 +131,6 @@ nav ul li:hover{
 		display: block;
 		text-align: center;
 	}
-	
-	
-	/* carousel */
-	.carousel-caption{
-		display: none;
-		
-	}
-	
 	#icon, #icon1,#icon2{
 		max-width: 150px;
 		
@@ -136,11 +145,4 @@ nav ul li:hover{
 	}
 }
 
-#karoseria{
-	font-size: 1.6em;
-}
-#karoseria h4{ 
-	padding-bottom: 15%;
-	text-align: center;
-	font-size: 2em;
-}
+
