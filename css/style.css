@@ -11,11 +11,9 @@ body{
 	padding: 0;
 }
 article{
-	max-width: 95%;
 	padding: 0 5%;
 }
 footer{
-	width: 98%;
 	background-color: #302E2E;
 	padding: 2%;
 	color: #eef0ed;
@@ -27,14 +25,16 @@ nav{
 	background: #373535;
 }
 nav ul{
+	background-image: url("logo1.png");
 	margin: 0;
 	padding: 0;
 	float: right;
 }
 
 nav ul li{
+	list-style-type: none;
 	list-style: none;
-	display: inline-block;
+	display: inline-block;	
 	padding: 20px 40px;
 }
 nav ul li a{
@@ -46,7 +46,9 @@ nav ul li:hover{
 	text-decoration: none;
 	background: #E7842A;
 }
-.hid {
+#hid {
+	padding: 10px 30px;
+	box-sizing: border-box;
 	display: none;
 }
 .social{
@@ -82,7 +84,6 @@ article h4{
 	text-align: center;
 }
 #about article{
-	max-width: 50%;
 	flex-grow:1;
 }
 #about img{
@@ -99,7 +100,7 @@ article h4{
 }
 #sutaz img{
 	max-width: 100%;
-	flex-grow:1;
+	flex-grow:2;
 }
 footer{
 	padding:0 12%;
@@ -117,10 +118,13 @@ footer h3{
 #logo{
 	flex-grow:1;
 }
-
-
-
-
+.menu{
+	border: solid 2px;
+	border-color: white;
+	border-radius: 35%;
+	background-color: white;
+	padding: 2px;
+}
 
 
 
@@ -137,6 +141,11 @@ footer h3{
 	.pc {
 		display: none;
 	}
+	#hid{
+		display:inline-block;
+	}
+	.menu{float: right;
+	}
 	nav h1{
 		display: block;
 		float: none;
@@ -145,7 +154,9 @@ footer h3{
 		float: none;
 	}
 	nav ul li{
-		display: block;
+		list-style-type: none;
+		display:flex;
+		flex-direction:column;
 		text-align: center;
 	}
 	#icon, #icon1,#icon2{
@@ -159,6 +170,25 @@ footer h3{
 	h4{
 		font-size: 1.3em;
 		font-style: italic;		
+	}
+	footer{
+		text-align: center;
+		display: block;
+	}
+	#about{
+		text-align: center;
+		display:flex;
+		flex-direction:column;
+	}
+	#sutaz{
+		text-align: center;
+		display:flex;
+		flex-direction:column;
+	}
+	.social{
+		text-align: center;
+		display:flex;
+		flex-direction:column;
 	}
 }
 

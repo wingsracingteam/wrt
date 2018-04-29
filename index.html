@@ -33,16 +33,16 @@
 <body>
 	<header>
 		<nav id="menu">
-			<a href="#about"><img src="img/logo1.png" height="6%" width="6%" alt="Logo"></a>
-			<ul class="pc">
+			<a href="#about" class="pc"><img src="img/logo1.png" height="6%" width="6%" alt="Logo"></a>
+			<ul >
 				<li><a href="index.html">Domov</a></li>
 				<li><a href="#about">O nás</a></li>
 				<li><a href="html/auto1.html">Auto</a></li>
 				<li><a href="#sponzors">Sponzori</a></li>
 			</ul>
-			<div class="hid">
-				<a href="index.html"><img src="img/logo1.png" height="6%" width="6%" alt="Logo"></a>
-				<h4>Menu</h4>
+			<div id="hid">
+				<a href="index.html"><img src="img/logo1.png" height="20%" width="20%" alt="Logo"></a>
+				<h4 class="menu">Menu</h4>
 			</div>
 		</nav>	
 	</header>
@@ -88,12 +88,12 @@
 		<h4>Land Rover 4x4 v školách</h4>
 			<p>Súťaž Land Rover 4x4 v školách je organizovaná pod záštitou spoločnosti Jaguar & Land Rover. Vízia spoločnosti je prepojiť nadšenie Študentov základných škôl so znalosťami študentov stredných škôl.Súťažiaci majú možnosť konzultovať svoju prácu s inžiniérmi spoločnosti Jaguar & Land Rover, která sa stáva zároveň mentorem súťaže pre danú krajinu</p>
 		</article>
-		<a target="_blank" href="http://4x4veskolach.cz/"><img src="img/landrover.jpg" alt="Land Rover"></a>
+		<a target="_blank" href="http://4x4veskolach.cz/"><img src="img/landrover.jpg" width="100%" alt="Land Rover"></a>
 		<article>
 			<h4>Stredná priemyselná škola elektrotechnická, Košice</h4>
 			<p>Škola umožňuje štvorročné štúdium s maturitou v dvoch študijných odboroch Elektrotechnika a Technické lýceum, čo je označenie pre výberové školy podobné našim gymnáziám, ktoré v krajinách západnej Európy úspešne existujú už desiatky rokov. Otvorenie študijného odboru Technické lýceum na SPŠE v Košiciach v školskom roku 2010/2011 zvýšilo kvalitu a možnosti vzdelávania, podporuje realizáciu zámerov EÚ rozšíriť úroveň všeobecného vzdelania aj na odborných školách.</p>
 		</article>
-		<a target="_blank" href="http://www.spseke.sk/skola/"><img src="img/spseke_logo.png" alt="SPSEKE"></a>
+		<a target="_blank" href="http://www.spseke.sk/skola/"><img src="img/spseke_logo.png" width="100%" alt="SPSEKE"></a>
 	</div>
 	<div id="sponzors">
 		<h1><b>Sponzori</b></h1>
@@ -117,5 +117,15 @@
 		<img src="img/logo1.png" width="45%" alt="Logo">
 		</div>
 	</footer>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		$(".menu").click(function(){
+			$("nav").slideToggle(1000);
+		})
+	})
+	</script>
 	</body>
 </html>
