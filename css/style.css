@@ -82,6 +82,7 @@ article h4{
 	text-align: center;
 }
 #about article{
+	max-width: 50%;
 	flex-grow:1;
 }
 #about img{
@@ -98,6 +99,22 @@ article h4{
 }
 #sutaz img{
 	max-width: 100%;
+	flex-grow:1;
+}
+footer{
+	padding:0 12%;
+	display: flex;
+}
+footer h3{
+	text-transform: uppercase;
+}
+#contact{
+	flex-grow:1;
+}
+#source{
+	flex-grow:1;
+}
+#logo{
 	flex-grow:1;
 }
 
