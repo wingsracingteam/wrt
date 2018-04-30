@@ -94,7 +94,7 @@ nav ul li:hover{
 	padding-top: 15%;
 }
 #wrt{
-	padding-top: 10%;
+	padding-top: 4%;
 }
 @media (max-width : 900px ){
 	nav{
@@ -117,7 +117,9 @@ nav ul li:hover{
 	.brand{
 		display: none;
 	}
-	
+	#wrt{
+	padding-top: 10%;
+}
 	
 	/* carousel */
 	.carousel-caption{
