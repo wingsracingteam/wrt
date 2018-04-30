@@ -4,147 +4,104 @@
 body{
 	overflow-y: scroll;
 	overflow-x: hidden;
-	max-width: 100%;
-	font-size: 25px;
 	text-align: justify;
 	margin: 0;
 	padding: 0;
 }
-article{
-	padding: 0 5%;
-}
-footer{
-	background-color: #302E2E;
-	padding: 2%;
-	color: #eef0ed;
-}
+
 nav{
-	z-index: 1;
-	position: fixed;
 	width: 100%;
 	background: #373535;
+	padding: 0 50px;
+	box-sizing: border-box;
 }
+nav h1{
+	margin: 0;
+	padding: 10px 20px;
+	float: left;
+}
+nav h1 a{
+	color: #eef0ed;
+	text-decoration: none;
+}
+
 nav ul{
-	background-image: url("logo1.png");
 	margin: 0;
 	padding: 0;
 	float: right;
 }
 
 nav ul li{
-	list-style-type: none;
 	list-style: none;
-	display: inline-block;	
+	display: inline-block;
 	padding: 20px 40px;
+	transition: .5s;	
 }
 nav ul li a{
 	color: #eef0ed;
 	text-decoration: none;
 	font-size: 1.3em;
 }
+
 nav ul li:hover{
-	text-decoration: none;
 	background: #E7842A;
 }
-#hid {
+
+
+.responsive-bar{
+	width: 100%;
+	background: #302E2E;
 	padding: 10px 30px;
 	box-sizing: border-box;
 	display: none;
 }
-.social{
-	padding-top: 10%;
-	text-decoration: none;
-	display: flex;
-	justify-content:space-around;
+.responsive-bar h3{
+	margin: 0;
+	padding: 3px 0;
+	color: #eef0ed;
+	float: left;
 }
-.social img{
+
+.responsive-bar h3 a{
+	text-decoration: none;
+	color: #eef0ed;
+}
+.responsive-bar h4 {
+	margin:0;
+	float: right;
+	color: #eef0ed;
+	padding: 5px 10px;
+	background: #E7842A;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+#start img{
 	filter: grayscale(0.5);
 	transition: all 0.8s cubic-bezier(0.29, 0.07, 0, 1.82);
 }
-.social img:hover{
+#start img:hover{
 	filter: grayscale(0);
 	transform: scale(1.15);
 }
-.social a{
-	text-decoration: none;
+#sponzors h1{
 	text-align: center;
-	color:#3b5998;
-}
-#icon, #icon1, #icon2 {
-	max-width: 450px;
-	height: 167px;
-}
-#about{
-	display: flex;
-	padding-bottom: 5%;
-}
-article h4{
-	padding-top: 5%;
-	font-size: 1.3em;
-	text-align: center;
-}
-#about article{
-	flex-grow:1;
-}
-#about img{
-	padding-top: 7%;
-	flex-grow:1;
-	max-width: 455px;
-	height: 455px;
-}
-#sutaz {
-	display: flex;
-}
-#sutaz article{
-	flex-grow:1;
-}
-#sutaz img{
-	max-width: 100%;
-	flex-grow:2;
-}
-footer{
-	padding:0 12%;
-	display: flex;
-}
-footer h3{
 	text-transform: uppercase;
 }
-#contact{
-	flex-grow:1;
+#sponzors img{
+	padding: 30% 0; 
 }
-#source{
-	flex-grow:1;
+.sutaz{
+	padding-top: 15%;
 }
-#logo{
-	flex-grow:1;
-}
-.menu{
-	border: solid 2px;
-	border-color: white;
-	border-radius: 35%;
-	background-color: white;
-	padding: 2px;
-}
-
-
-
-
-#karoseria{
-	font-size: 1.6em;
-}
-#karoseria h4{ 
-	padding-bottom: 15%;
-	text-align: center;
-	font-size: 2em;
+#wrt{
+	padding-top: 10%;
 }
 @media (max-width : 900px ){
-	.pc {
+	nav{
 		display: none;
 	}
-	#hid{
-		display:inline-block;
-	}
-	.menu{float: right;
+	.responsive-bar{
+		display: block;
 	}
 	nav h1{
 		display: block;
@@ -154,11 +111,20 @@ footer h3{
 		float: none;
 	}
 	nav ul li{
-		list-style-type: none;
-		display:flex;
-		flex-direction:column;
+		display: block;
 		text-align: center;
 	}
+	.brand{
+		display: none;
+	}
+	
+	
+	/* carousel */
+	.carousel-caption{
+		display: none;
+		
+	}
+	
 	#icon, #icon1,#icon2{
 		max-width: 150px;
 		
@@ -171,25 +137,52 @@ footer h3{
 		font-size: 1.3em;
 		font-style: italic;		
 	}
-	footer{
-		text-align: center;
-		display: block;
-	}
-	#about{
-		text-align: center;
-		display:flex;
-		flex-direction:column;
-	}
-	#sutaz{
-		text-align: center;
-		display:flex;
-		flex-direction:column;
-	}
-	.social{
-		text-align: center;
-		display:flex;
-		flex-direction:column;
-	}
+}
+
+h4{
+	font-style: italic;		
+}
+.carousel-caption{
+	top: 50%;
+	transform: translateY(-50%);
+	text-transform: uppercase;
+}
+.btn{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	padding: 10px 18px;
+	background: #E7842A;
+	border: 5px solid #fff;
+}
+
+#icon, #icon1, #icon2 {
+	max-width: 250px;
+	height: 167px;
+	margin: 7% auto;
+}
+
+.container{
+	margin: 2% auto;
+	
+}
+
+footer{
+	width: 100%;
+	background-color: #302E2E;
+	padding: 2%;
+	color: #eef0ed;
+}
+
+h5{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	
 }
 
 
+.logo{
+	padding-top: 40px;
+	padding-left:20px; 
+
+}
