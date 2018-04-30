@@ -96,8 +96,17 @@ nav ul li:hover{
 #wrt{
 	padding-top: 4%;
 }
-.nd{
-	padding-top: 10%;
+#slide{
+	padding-top: 4%;
+}
+#karoseria{
+	font-size: 1.5em;
+}
+#karoseria h4{
+	padding-top: 15%;
+	font-size: 1.7em;
+	text-align: center;
+	text-transform: uppercase;
 }
 @media (max-width : 900px ){
 	nav{
