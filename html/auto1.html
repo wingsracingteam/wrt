@@ -2,22 +2,20 @@
 <html lang="sk">
 <head>
 	<title>WRT-Auto</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../img/logo.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device=width, initial-scale=1, user-scaleble=no" />	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href= "../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/script.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<meta name="description" content="Popis auta tímu strednej priemyselnej školy elektrotechnickej, s ktorým sa zúčastňujú súťaže Land Rover 4x4 v školách.">
 	<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
 	<meta name="keywords" content="rc auta, Land Rover 4x4 v skolach, SPSEKE, Wings Racing Team,auta, Naval Diesel, Just Vychod, Vw beetle, Land Rover, Arduino, Raspberry, Facebook, Twitter, STN32">
 	<meta name="viewport" content="width=device=width, initial-scale=1, user-scaleble=no" />	
-	<link rel="stylesheet" type="text/css" href= "css/style.css">	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -26,13 +24,13 @@
     <meta property="og:type" content="article"/>
     <meta property="og:description" content="Popis auta tímu strednej priemyselnej školy elektrotechnickej, s ktorým sa zúčastňujú súťaže Land Rover 4x4 v školách." />
     <meta property="og:url" content="wrt.spseke.sk">
-    <meta property="og:image" content="img/logo.png">
+    <meta property="og:image" content="../img/logo.png">
     <!-- For Twitter -->
     <meta name="twitter:creator" content="WINGS RACING TEAM">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Wings Racing Team">
     <meta name="twitter:description" content="Popis auta tímu strednej priemyselnej školy elektrotechnickej, s ktorým sa zúčastňujú súťaže Land Rover 4x4 v školách.">
-    <meta name="twitter:image" content="img/logo.png">
+    <meta name="twitter:image" content="../img/logo.png">
     <!-- For Google -->
     <meta name="keywords" content="rc auta, Land Rover 4x4 v skolach, SPSEKE, Wings Racing Team,auta, Naval Diesel, Just Vychod, Vw beetle, Land Rover, Arduino, Raspberry, Facebook, Twitter, STN32">
     <meta name="description" content="Popis auta tímu strednej priemyselnej školy elektrotechnickej, s ktorým sa zúčastňujú súťaže Land Rover 4x4 v školách.">	
@@ -41,16 +39,17 @@
 
 <body>
 	<nav class="navbar navbar-fixed-top">
-		<a class="brand" href="../index.html"><img src="../img/logo1.png" height="60" alt="brand"></a>
+		<a class="brand" href="../index.html"><img src="../img/logo1.png" height="60" alt="Logo"></a>
 		
 		<ul>
+			<li class="responsive-bar"></li>
 			<li><a href="../index.html">Domov</a></li>
 			<li><a href="#karoseria">Karoséria</a></li>
 		</ul>
 		<div style="clear: both"></div>
 	</nav>
 	<div class="responsive-bar navbar-fixed-top">
-		<a href="index.html"><img src="img/logo1.png" height="28" alt="brand"></a>
+		<a href="../index.html"><img src="../img/logo1.png" height="28" alt="Logo"></a>
 		<h4 class="menu" >Menu</h4>
 		<div style="clear: both"></div>
 	</div>
@@ -149,7 +148,16 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-}
+	}
+	</script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		$(".menu").click(function(){
+			$("nav").slideToggle(1000);
+		})
+	})
 	</script>
 
 
