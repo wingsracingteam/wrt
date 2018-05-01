@@ -105,6 +105,9 @@ nav ul li:hover{
 	text-align: center;
 	text-transform: uppercase;
 }
+#auto {
+		padding-top: 30px;
+	}
 @media (max-width : 900px ){
 	nav{
 		display: none;
@@ -124,6 +127,9 @@ nav ul li:hover{
 		display: block;
 		text-align: center;
 	}
+	p{
+		font-size: 16px;
+	}
 	.brand{
 		display: none;
 	}
@@ -133,7 +139,22 @@ nav ul li:hover{
 	#logo{
 	width: 100%;
 	}
+	#margin{
+		list-style-type: none;
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+
+	}
+	#marg{
+		margin-top: 40px;
+		text-align: left;
+		font-size: 22px;
+	}
 	
+	#perc{
+		margin-top: 8%;
+	}
 	/* carousel */
 	.carousel-caption{
 		display: none;
@@ -156,6 +177,9 @@ nav ul li:hover{
 
 h4{
 	font-style: italic;		
+}
+h1 {
+	padding-top: 50px;
 }
 .carousel-caption{
 	top: 50%;
