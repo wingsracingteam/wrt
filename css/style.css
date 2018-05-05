@@ -137,6 +137,9 @@ nav ul li:hover{
 	.brand{
 		display: none;
 	}
+	#start {
+		padding-top:15px;
+	}
 	#wrt{
 	padding-top: 48px;
 	}
